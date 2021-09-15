@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 169, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "DLL Injector"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Inject",IDC_START,38,61,42,16
+    PUSHBUTTON      "About",IDC_ABOUT,89,61,42,16
+    LTEXT           "Executable",IDC_STATIC,22,27,37,11
+    EDITTEXT        IDC_EXE,64,25,83,12,ES_AUTOHSCROLL
+    LTEXT           "DLL",IDC_STATIC,22,44,32,11
+    EDITTEXT        IDC_DLL,64,42,83,12,ES_AUTOHSCROLL
+    LTEXT           "Launch executable and inject dll",IDC_STATIC,31,9,115,11
+    GROUPBOX        "",IDC_STATIC,6,1,155,83,BS_CENTER
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 165, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "DLL Injector 1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,43,43,16
+    LTEXT           "- Website:\thttps://josetr.github.io\n- Author:\tJose Torres\n- Language:\tC++",IDC_STATIC,31,12,131,30
+    ICON            IDI_ABOUT,IDC_STATIC,5,15,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "dll-injector.ico"
+
+IDI_ABOUT               ICON                    "about.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "CompanyName", "Jose Torres"
+            VALUE "FileDescription", "DLL Injector"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "dll-injector"
+            VALUE "LegalCopyright", "Copyright © 2021 Jose Torres."
+            VALUE "OriginalFilename", "dll-injector.exe"
+            VALUE "ProductName", "DLL Injector"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 168
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
