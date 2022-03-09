@@ -1,0 +1,21 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      CONFIGURATION: Release
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+
+      - name: Restore
+        run: msbuild /t:restore
+
+      - name: Build
+        run: msbuild
